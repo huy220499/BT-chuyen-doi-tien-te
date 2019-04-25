@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi Tien</title>
+</head>
+<body>
+    <br>
+    Amount
+    </br>
+    <input type="text" name="" id="input">
+    </br>
+    From
+    <br/>
+    <select id="from">
+        <option value="1">USD</option>
+        <option value="23000">Viet Nam</option>
+        <option value="0.89">Euro</option>
+        <option value="8500">kip lao</option>
+        <option value="0.77">Bang anh</option>
+        <option value="1.36">Dollar Sing</option>
+        <option value="1.4">Dollar Uc</option>
+        <option value="1.34">Dollar Canada</option>
+        <option value="6.5">Nhan Dan Te</option>
+        <option value="112">Yen Nhat</option>
+    </select>
+    <br/>
+    To
+    <br/>
+    <select id="to">
+        <option value="1">USD</option>
+        <option value="23000">Viet Nam</option>
+        <option value="0.89">Euro</option>
+        <option value="8500">kip lao</option>
+        <option value="0.77">Bang anh</option>
+        <option value="1.36">Dollar Sing</option>
+        <option value="1.4">Dollar Uc</option>
+        <option value="1.34">Dollar Canada</option>
+        <option value="6.5">Nhan Dan Te</option>
+        <option value="112">Yen Nhat</option>
+    </select>
+    <br/>
+    <button onclick="chuyentien()">convert</button>
+    <br/>
+    ket qua <p id="hien thi"></p>
+
+<script>
+    function chuyentien() {
+        let input = document.getElementById("input").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+
+        let nhap = parseFloat(input);
+        if (input <= 0 ){
+            document.getElementById("hienthi").innerHTML = "nhap chua dung"
+        }else
+            KQ = (nhap*to)/from
+        document.getElementById("hien thi").innerHTML = KQ
+
+            }
+
+</script>
+
+</body>
+</html>
